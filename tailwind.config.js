@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin');
+
 export default {
   content: [
 		"./index.html", "./main.js",
@@ -7,7 +10,7 @@ export default {
   theme: {
     extend: {
 		screens: {
-			xs: "425px"
+			xs: "375px"
 		},
 		colors: {
 			bkg: "#171819",
@@ -45,6 +48,21 @@ export default {
 		}
 	 },
   },
-  plugins: [],
+  plugins: [
+	plugin(({ addUtilities, theme}) => {
+		addUtilities({
+			".fade-up": {
+				transition:
+					"transform 1s cubic-bezier(0.64, 0.04, 0.26, 0.87), opacity 0.8s cubic-bezier(0.64, 0.04, 0.26, 0.87)",
+				opacity: theme("opacity.0"),
+				transform: "translate3d(0, 2rem, 0)",
+			},
+			".faded": {
+				opacity: theme("opacity.100"),
+				transform: "translate3d(0, 0, 0)",
+			},
+		})
+	})
+  ],
 }
 
