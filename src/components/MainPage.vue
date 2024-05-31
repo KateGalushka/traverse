@@ -276,35 +276,35 @@ import { ref, onMounted } from 'vue';
 
 const swiperSlides = [
 	{
-		imgSrc: "src/assets/images/slider-1.jpg",
+		imgSrc: "@/assets/images/slider-1.jpg",
 		imgText: 'Ocean Wonders' 
 	},
 	{
-		imgSrc: "src/assets/images/slider-2.jpg",
+		imgSrc: "@/assets/images/slider-2.jpg",
 		imgText: 'Waterfall Cave' 
 	},
 	{
-		imgSrc: "src/assets/images/slider-3.jpg",
+		imgSrc: "@/assets/images/slider-3.jpg",
 		imgText: 'Rainbow Falls' 
 	},
 	{
-		imgSrc: "src/assets/images/slider-4.jpg",
+		imgSrc: "@/assets/images/slider-4.jpg",
 		imgText: 'Canyon Peaks' 
 	},
 	{
-		imgSrc: "src/assets/images/slider-5.jpg",
+		imgSrc: "@/assets/images/slider-5.jpg",
 		imgText: 'Mountain Inlet' 
 	},
 	{
-		imgSrc: "src/assets/images/slider-6.jpg",
+		imgSrc: "@/assets/images/slider-6.jpg",
 		imgText: 'Angel Cliffs'
 	},
 	{
-		imgSrc: "src/assets/images/slider-7.jpg",
+		imgSrc: "@/assets/images/slider-7.jpg",
 		imgText: 'Aurora Sound'
 	},
 	{
-		imgSrc: "src/assets/images/slider-8.jpg",
+		imgSrc: "@/assets/images/slider-8.jpg",
 		imgText: 'Icy Meadows'
 	},
 ];
